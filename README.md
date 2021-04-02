@@ -62,6 +62,7 @@ https://dropday.io/api/v1/orders
 | &nbsp;&nbsp;&nbsp;&nbsp;name                      | String   | The name or description of the product bought.                                                            |
 | &nbsp;&nbsp;&nbsp;&nbsp;reference *`optional`*    | String   | The reference or SKU of the product bought.                                                               |
 | &nbsp;&nbsp;&nbsp;&nbsp;quantity                  | Number   | The quantity of the product bought.                                                                       |
+| &nbsp;&nbsp;&nbsp;&nbsp;stock_quantity *`optional`* | Number   | The quantity of the product bought.                                                                       |
 | &nbsp;&nbsp;&nbsp;&nbsp;price                     | Number   | The price of the product bought.                                                                          |
 | &nbsp;&nbsp;&nbsp;&nbsp;image_url *`optional`*    | String   | The url of the image of the product bought.                                                               |
 | &nbsp;&nbsp;&nbsp;&nbsp;brand *`optional`*        | String   | The brand of the product bought.                                                                          |
@@ -94,7 +95,8 @@ https://dropday.io/api/v1/orders
       "ean13": "87235211235464",      
       "name": "Pizza margerita",
       "reference": "PZZA00001",
-      "quantity": "2",
+      "quantity": 2,
+      "stock_quantity": 2,
       "price": 10.99,
       "image_url": "https://example.org/pizza.jpg",
       "brand": "Italian",
@@ -107,6 +109,7 @@ https://dropday.io/api/v1/orders
       "reference": "COKE",
       "name": "Coca Cola",
       "quantity": 2,
+      "stock_quantity": 2,
       "price": 2.50,
       "image_url": "https://example.org/cola.jpg",
       "brand": "Coca Cola",
