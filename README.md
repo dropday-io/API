@@ -18,9 +18,10 @@ https://dropday.io/api/v1
 
 ```json
 {
+  "Content-Type": "application/json",
+  "Accept": "application/json",
   "api-key": "tdh7nNUp3DZAHsMtw3dQYhDsm3wf593hMGbyXP6Y5R8DTF2Rwy4QCvkWFYQb",
   "account-id": "101",
-  "Accept": "application/json",
 }
 ```
 
