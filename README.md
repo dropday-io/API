@@ -67,7 +67,6 @@ https://dropday.io/api/v1/orders
 | &nbsp;&nbsp;&nbsp;&nbsp;brand *`optional`*        | String   | The brand of the product bought.                                                                          |
 | &nbsp;&nbsp;&nbsp;&nbsp;category *`optional`*     | String   | The category of the product bought.                                                                       |
 | &nbsp;&nbsp;&nbsp;&nbsp;supplier *`optional`*     | String   | The supplier of the product bought.                                                                       |
-| &nbsp;&nbsp;&nbsp;&nbsp;custom *`optional`*       | String   | Provide any product variables you want.                                                                   |
 
 **Request example**
 
@@ -114,8 +113,7 @@ https://dropday.io/api/v1/orders
       "category": "Drinks",
       "supplier": "The Coca Cola Company" 
     }
-  ],
-  "custom": {"BO": true}  
+  ] 
 }
 ```
 
