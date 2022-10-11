@@ -55,6 +55,7 @@ https://dropday.io/api/v1/orders
 | &nbsp;&nbsp;&nbsp;&nbsp;address2 *`optional`*         | String   | Additional information about the shipping address, like apartment number.                                 |
 | &nbsp;&nbsp;&nbsp;&nbsp;postcode                      | String   | The postcode of the shipping address.                                                                     |
 | &nbsp;&nbsp;&nbsp;&nbsp;city                          | String   | The city of the shipping address.                                                                         |
+| &nbsp;&nbsp;&nbsp;&nbsp;state                         | String   | The state of the shipping address.                                                                      |
 | &nbsp;&nbsp;&nbsp;&nbsp;country                       | String   | The country of the shipping address.                                                                      |
 | &nbsp;&nbsp;&nbsp;&nbsp;phone *`optional`*            | Number   | The phone of the shipping address.                                                                        |
 | products                                              | Object[] | Object with information about the products in the order (Array of Objects).                               |
