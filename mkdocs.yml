@@ -1,0 +1,11 @@
+site_name: Dropday API documentation
+theme:
+  name: 'material'
+  palette:
+    primary: 'black'
+    accent: 'pink'
+nav:
+  - Getting started: 'index.md'
+  - Authentication: 'authentication/docs/index.md'
+  - Orders: 'orders/docs/index.md'
+  - Products: 'products/docs/index.md'
