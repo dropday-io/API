@@ -1,9 +1,14 @@
-site_name: Dropday API documentation
+site_name: API documentation
 theme:
   name: 'material'
+  logo: assets/logo.png
+  font:
+    text: Roboto
   palette:
     primary: 'black'
-    accent: 'pink'
+    accent: '#007bff'
+extra_css:
+  - stylesheets/extra.css
 nav:
   - Getting started: 'index.md'
   - Authentication: 'authentication/docs/index.md'
