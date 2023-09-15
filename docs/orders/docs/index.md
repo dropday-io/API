@@ -24,7 +24,7 @@ https://dropday.io/api/v1/orders
 | &nbsp;&nbsp;&nbsp;&nbsp;address2 *`optional`*         | String   | Additional information about the shipping address, like apartment number.                                 |
 | &nbsp;&nbsp;&nbsp;&nbsp;postcode                      | String   | The postcode of the shipping address.                                                                     |
 | &nbsp;&nbsp;&nbsp;&nbsp;city                          | String   | The city of the shipping address.                                                                         |
-| &nbsp;&nbsp;&nbsp;&nbsp;state *`optional`*            | String   | The state of the shipping address.                                                                      |
+| &nbsp;&nbsp;&nbsp;&nbsp;state *`optional`*            | String   | The state of the shipping address.                                                                        |
 | &nbsp;&nbsp;&nbsp;&nbsp;country                       | String   | The country of the shipping address.                                                                      |
 | &nbsp;&nbsp;&nbsp;&nbsp;phone *`optional`*            | Number   | The phone of the shipping address.                                                                        |
 | products                                              | Object[] | Object with information about the products in the order (Array of Objects).                               |
@@ -39,55 +39,66 @@ https://dropday.io/api/v1/orders
 | &nbsp;&nbsp;&nbsp;&nbsp;brand *`optional`*            | String   | The brand of the product bought.                                                                          |
 | &nbsp;&nbsp;&nbsp;&nbsp;category *`optional`*         | String   | The category of the product bought.                                                                       |
 | &nbsp;&nbsp;&nbsp;&nbsp;supplier *`optional`*         | String   | The supplier of the product bought.                                                                       |
+| &nbsp;&nbsp;&nbsp;&nbsp;custom *`optional`*           | Object   | An object where you can add any key-value pair.                                                           |
 
 **Request example**
 
 ```json
 {
-  "external_id": "L41223D",
-  "source": "Example Shop Dot Org",
-  "test": false,
-  "total": 435.45,
-  "shipping_cost": 4.95,
-  "email": "info@example.org",
-  "shipping_address": {
-    "first_name": "John",
-    "last_name": "Doe",
-    "company_name": "Jeff",
-    "address1": "Jumpstreet 23",
-    "postcode": "4500",
-    "city": "LA",
-    "country": "US",
-    "phone": "222 222"
-  },
-  "products": [
-  {
-      "external_id": "1",
-      "ean13": "87235211235464",      
-      "name": "Pizza margerita",
-      "reference": "PZZA00001",
-      "quantity": 2,
-      "stock_quantity": 424,
-      "price": 10.99,
-      "image_url": "https://example.org/pizza.jpg",
-      "brand": "Italian",
-      "category": "Pizza's",
-      "supplier": "Mario"    
+    "external_id": "L41223D",
+    "source": "Example Shop Dot Org",
+    "test": false,
+    "total": 435.45,
+    "shipping_cost": 4.95,
+    "email": "info@example.org",
+    "shipping_address":
+    {
+        "first_name": "John",
+        "last_name": "Doe",
+        "company_name": "Jeff",
+        "address1": "Jumpstreet 23",
+        "postcode": "4500",
+        "city": "LA",
+        "country": "US",
+        "phone": "222 222"
     },
-  {
-      "external_id": "2",
-      "ean13": "07235211235464",
-      "reference": "COKE",
-      "name": "Coca Cola",
-      "quantity": 2,
-      "stock_quantity": 34,
-      "price": 2.50,
-      "image_url": "https://example.org/cola.jpg",
-      "brand": "Coca Cola",
-      "category": "Drinks",
-      "supplier": "The Coca Cola Company" 
-    }
-  ] 
+    "products": [
+    {
+        "external_id": "1",
+        "ean13": "87235211235464",
+        "name": "Pizza margerita",
+        "reference": "PZZA00001",
+        "quantity": 2,
+        "stock_quantity": 424,
+        "price": 10.99,
+        "image_url": "https://example.org/pizza.jpg",
+        "brand": "Italian",
+        "category": "Pizza's",
+        "supplier": "Mario",
+        "custom":
+        {
+            "toppings": "onions, olives",
+            "customer_message": "No ananas/pineapple"
+        }
+
+    },
+    {
+        "external_id": "2",
+        "ean13": "07235211235464",
+        "reference": "COKE",
+        "name": "Coca Cola",
+        "quantity": 2,
+        "stock_quantity": 34,
+        "price": 2.50,
+        "image_url": "https://example.org/cola.jpg",
+        "brand": "Coca Cola",
+        "category": "Drinks",
+        "supplier": "The Coca Cola Company",
+        "custom":
+        {
+            "customer_message": "No ice"
+        }
+    }]
 }
 ```
 
