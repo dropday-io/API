@@ -1,0 +1,16 @@
+site_name: API documentation
+theme:
+  name: 'material'
+  logo: assets/logo.png
+  font:
+    text: Roboto
+  palette:
+    primary: 'black'
+    accent: '#007bff'
+extra_css:
+  - stylesheets/extra.css
+nav:
+  - Getting started: 'index.md'
+  - Authentication: 'authentication/docs/index.md'
+  - Orders: 'orders/docs/index.md'
+  - Products: 'products/docs/index.md'
