@@ -15,7 +15,7 @@ https://dropday.io/api/v1/orders
 | test *`optional`*                                     | Boolean  | Set this to true to make this order a test order. If not provided, it will not be considered a test order.|
 | total                                                 | Number   | The total amount of the order.                                                                            |
 | shipping_cost                                         | Number   | The total shipping cost of the order.                                                                     |
-| email                                                 | String   | The email address of the receiver.                                                                        |
+| email *`optional`*                                    | String   | The email address of the receiver.                                                                        |
 | shipping_address                                      | Object   | The shipping address for the order.                                                                       |
 | &nbsp;&nbsp;&nbsp;&nbsp;first_name                    | String   | The firstname of the shipping address.                                                                    |
 | &nbsp;&nbsp;&nbsp;&nbsp;last_name                     | String   | The lastname of the shipping address.                                                                     |
