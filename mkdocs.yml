@@ -1,4 +1,5 @@
 site_name: API documentation
+site_url: https://docs.dropday.io
 theme:
   name: 'material'
   logo: assets/logo.png
