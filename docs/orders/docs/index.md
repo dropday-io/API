@@ -35,6 +35,7 @@ https://dropday.io/api/v1/orders
 | &nbsp;&nbsp;&nbsp;&nbsp;quantity                      | Number   | The quantity of the product bought.                                                                       |
 | &nbsp;&nbsp;&nbsp;&nbsp;stock_quantity *`optional`*   | Number   | The quantity of the product bought.                                                                       |
 | &nbsp;&nbsp;&nbsp;&nbsp;price                         | Number   | The price of the product bought.                                                                          |
+| &nbsp;&nbsp;&nbsp;&nbsp;purchase_price                | Number   | The price that you agreed on with your supplier/vendor                                                    |
 | &nbsp;&nbsp;&nbsp;&nbsp;image_url *`optional`*        | String   | The url of the image of the product bought.                                                               |
 | &nbsp;&nbsp;&nbsp;&nbsp;brand *`optional`*            | String   | The brand of the product bought.                                                                          |
 | &nbsp;&nbsp;&nbsp;&nbsp;category *`optional`*         | String   | The category of the product bought.                                                                       |
