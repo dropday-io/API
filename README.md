@@ -4,5 +4,6 @@ Use the Dropday API to send orders from your e-commerce platform or webshop to D
 
 ---
 
+Go to https://docs.dropday.io
 
 
