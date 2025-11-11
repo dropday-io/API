@@ -14,7 +14,12 @@ https://dropday.io/api/v1/orders
 | source                                                | String   | The source of the order. Usually the webshop name.                                                        |
 | test *`optional`*                                     | Boolean  | Set this to true to make this order a test order. If not provided, it will not be considered a test order.|
 | total                                                 | Number   | The total amount of the order.                                                                            |
-| shipping_cost                                         | Number   | The total shipping cost of the order.                                                                     |
+| shipping *`optional`*                                 | Object   | Additional shipping information for the order.                                                            |
+| &nbsp;&nbsp;&nbsp;&nbsp;name *`optional`*             | String   | The name of the shipping provider (e.g., "UPS").                                                    |
+| &nbsp;&nbsp;&nbsp;&nbsp;description *`optional`*      | String   | Description of the shipping method (e.g., "Standard delivery").                                           |
+| &nbsp;&nbsp;&nbsp;&nbsp;cost *`optional`*             | Number   | The shipping cost.                                                                                        |
+| &nbsp;&nbsp;&nbsp;&nbsp;note *`optional`*             | String   | Additional notes or instructions for delivery.                                                            |
+| &nbsp;&nbsp;&nbsp;&nbsp;delivery_date *`optional`*    | String   | Expected delivery date (format: DD-MM-YYYY).                                                              |
 | email *`optional`*                                    | String   | The email address of the receiver.                                                                        |
 | shipping_address                                      | Object   | The shipping address for the order.                                                                       |
 | &nbsp;&nbsp;&nbsp;&nbsp;first_name                    | String   | The firstname of the shipping address.                                                                    |
@@ -51,6 +56,13 @@ https://dropday.io/api/v1/orders
     "test": false,
     "total": 435.45,
     "shipping_cost": 4.95,
+    "shipping": {
+        "name": "DHL Group",
+        "description": "Standard delivery",
+        "cost": 4.95,
+        "note": "Please not at the neighbor, the dogs eat the packages",
+        "delivery_date": "07-11-2025"
+    },
     "email": "info@example.org",
     "shipping_address":
     {
